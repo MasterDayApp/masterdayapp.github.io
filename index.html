@@ -8,6 +8,28 @@
     /* Google Fonts */
     @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column-reverse;
+      }
+      
+      .hero-content {
+        padding-right: 0;
+        padding-top: 20px;
+      }
+      
+      .masterday-screenshot {
+        padding-right: 0;
+        margin-bottom: 20px;
+      }
+      
+      .masterday-screenshot img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+
+
     body {
       font-family: 'Poppins', sans-serif;
       margin: 0;
@@ -26,7 +48,8 @@
 
     .hero {
       display: flex;
-      align-items: center;
+      /*align-items: center;*/
+      align-items: flex-start;
       justify-content: space-between;
       margin-bottom: 40px;
     }
