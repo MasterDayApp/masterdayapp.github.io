@@ -9,13 +9,8 @@
     @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');
 
     @media (max-width: 768px) {
-      .hero {
+      .main {
         flex-direction: column-reverse;
-      }
-      
-      .hero-content {
-        padding-right: 0;
-        padding-top: 20px;
       }
       
       .masterday-screenshot {
@@ -48,12 +43,19 @@
 
     .hero {
       display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
+    }
+
+    .main {
+      display: flex;
       /*align-items: center;*/
       align-items: flex-start;
       justify-content: space-between;
       margin-bottom: 40px;
     }
-
+    
     .contact {
         text-align: left;
     }
@@ -135,7 +137,7 @@
 
   <div class="divider"></div><br>
 
-<div class="hero">
+<div class="main">
 <div class="masterday-screenshot" >
         <img width="225" height="450" src="src/masterday_screenshot.png" alt="MasterDay Screenshot">
 </div>
